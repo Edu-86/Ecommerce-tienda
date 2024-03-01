@@ -9,6 +9,7 @@ html {
   body{
         font-family: "Raleway", sans-serif;  
         font-size: 1.6rem;
+        line-height: 2;
   }
   /* Globales */
 h1, h2, h3{
@@ -37,12 +38,26 @@ img{
   max-width: 100%;
   display: block;
 }
-
+.btn{
+  background-color: #8cbc00;
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 1rem;
+  transition: background-color .3s ease-out;
+  text-align: center;
+}
+.btn:hover{
+  background-color: #769c02;
+}
 /* Utilidades */
 .text-center{
   text-align: center;
-  margin-top: 4rem;
-}
+  }
+   .max-width-30{
+    max-width: 30rem;
+   }
 
   /* Header y navegacion */
 .nombre-sitio {
@@ -182,18 +197,7 @@ img{
     font-weight: 900;
     margin: 3rem;
   }
-  .btn{
-    background-color: #8cbc00;
-    display: block;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 900;
-    padding: 1rem;
-    transition: background-color .3s ease-out;
-  }
-  .btn a:hover{
-    background-color: #769c02;
-  }
+
  /* Footer */
 
  .site-footer{
@@ -218,4 +222,60 @@ img{
   text-align: center;
   margin-top: 5rem;
 }
+ /* Nosotros */
+ .contenido-nosotros{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  column-gap: 4rem;
+ }
+ .informacion-nosotros{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
  
+ /* Blog */
+.contenedor-blog{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 4rem;}
+
+  .entrada{
+    border-bottom: 2px solid #e1e1e1;
+    padding-bottom: 4rem;
+    margin-bottom: 2rem;
+  }
+  .entrada:last-of-type{
+    border: none;
+  }
+  .entrada-meta{
+    display: flex;
+    justify-content: space-between;
+  }
+  .entrada-meta p{
+    font-weight: 700;
+  }
+  .entrada-meta span{
+    color: #037bc0;
+  }
+
+  .contenido-entrada-blog{
+    width: 60rem;
+    margin: 0 auto;
+  }
+  /* Galería */
+
+  .galeria{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .galeria img{
+    height: 40rem;
+    width: 40rem;
+    object-fit: cover;
+  }
