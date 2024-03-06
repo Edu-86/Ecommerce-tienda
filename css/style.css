@@ -397,7 +397,7 @@ grid-row: 2 / 3;
   }
 
   .contenido-entrada-blog{
-    width: 60rem;
+    max-width: 60rem;
     margin: 0 auto;
   }
  /* Galería */
